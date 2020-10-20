@@ -1,0 +1,9 @@
+# Maps code in repository with maintainers
+# Order is important. The last matching pattern has the most precedence.
+
+# SEE https://docs.gitlab.com/ee/user/project/code_owners.html
+Makefile                                  @pcrespov
+.github*                                   @pcrespov
+data/classifiers/*                        @zhuang
+data/collections/*                        @zhuang
+tools/*                                   @pcrespov
