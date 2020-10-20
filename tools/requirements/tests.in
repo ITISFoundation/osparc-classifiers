@@ -1,0 +1,8 @@
+-r tools.txt
+
+# 
+jsonschema
+
+# tools
+pytest
+pytest-sugar

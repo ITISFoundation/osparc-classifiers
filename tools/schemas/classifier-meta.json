@@ -1,0 +1,90 @@
+{
+  "title": "Classifier",
+  "type": "object",
+  "properties": {
+    "classifier": {
+      "title": "Classifier",
+      "type": "string"
+    },
+    "display_name": {
+      "title": "Display Name",
+      "type": "string"
+    },
+    "short_description": {
+      "title": "Short Description",
+      "type": "string"
+    },
+    "logo": {
+      "title": "Logo",
+      "type": "string",
+      "format": "path"
+    },
+    "aliases": {
+      "title": "Aliases",
+      "default": [],
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {}
+        }
+      ]
+    },
+    "created_by": {
+      "title": "Created By",
+      "type": "string"
+    },
+    "released": {
+      "title": "Released",
+      "type": "string",
+      "format": "date"
+    },
+    "related": {
+      "title": "Related",
+      "default": [],
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {}
+        }
+      ]
+    },
+    "url": {
+      "title": "Url",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "github_url": {
+      "title": "Github Url",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "wikipedia_url": {
+      "title": "Wikipedia Url",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "markdown": {
+      "title": "Markdown",
+      "default": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "classifier",
+    "display_name",
+    "short_description",
+    "created_by"
+  ]
+}

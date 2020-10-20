@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# ignore all vscode except templates
+.vscode/*
+!.vscode/*.template.*
+
+# output artifacts
+out
+
+# ignore anything having the keyword "ignore"
+*ignore*

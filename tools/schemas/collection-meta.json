@@ -1,0 +1,32 @@
+{
+  "title": "Collection",
+  "type": "object",
+  "properties": {
+    "items": {
+      "title": "Items",
+      "description": "List of studies repos associated to this collection",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "display_name": {
+      "title": "Display Name",
+      "type": "string"
+    },
+    "created_by": {
+      "title": "Created By",
+      "type": "string"
+    },
+    "markdown": {
+      "title": "Markdown",
+      "default": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "items",
+    "display_name",
+    "created_by"
+  ]
+}
