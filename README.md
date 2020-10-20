@@ -41,3 +41,9 @@ This workflows guarantees continues versioning, validation and community review 
 - [``.vscode``](.vscode)  : some template configs for one of the coolest open IDEs in the world ;-)
 - [``data/classifiers``](data/classifiers): where classifiers names and metadata is hierarchicaly stored
 - [``tools``](tools) : some python code to test ``data`` based on some json-schemas and layout conventions.
+
+
+
+### References
+
+- A gentle intro to github [workflows](https://guides.github.com/activities/hello-world/) used here for data curation
