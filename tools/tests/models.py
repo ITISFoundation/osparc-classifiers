@@ -20,7 +20,7 @@ ItemsSequence = Union[str, List]
 
 
 def comma_separated_to_list(values: ItemsSequence) -> List:
-    return values.split(",") if isinstance(values, str) else values
+    return [v.strip() for v in values.split(",")] if isinstance(values, str) else values
 
 
 ClassifierName = constr(regex=r"[\w:]+")
@@ -39,6 +39,7 @@ class Classifier(BaseModel):
     github_url: Optional[HttpUrl] = None
     wikipedia_url: Optional[HttpUrl] = None
     markdown: Optional[str] = ""
+    rrid: Optional[str] = ""
 
     # pylint: disable=no-self-argument
 
